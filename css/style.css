@@ -277,13 +277,13 @@ a:hover, a:active, a:focus {
 /* Toggle Button Hover/Focus Styles */
 .navbar-default .navbar-toggle:hover .icon-bar,
 .navbar-default .navbar-toggle:focus .icon-bar {
-  background-color: whitesmoke; /* Ensure icon bars are visible on hover/focus */
+  background-color: transparent; /* Ensure icon bars are visible on hover/focus */
 }
 
 /* Navbar Hover/Focus Styles */
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: whitesmoke;
+  background-color: transparent;
 }
 
 .navbar-default .navbar-nav > li a:hover {
