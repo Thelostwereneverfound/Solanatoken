@@ -206,6 +206,8 @@ a:hover, a:active, a:focus {
     Navigation section              
 -----------------------------------------*/
 /* CSS for Navbar */
+/* CSS for Navbar */
+/* CSS for Navbar */
 .navbar-default {
   background: black;
   border: none;
@@ -247,12 +249,32 @@ a:hover, a:active, a:focus {
   margin-top: 10px; /* Added margin to prevent distortion */
   position: relative; /* Added position to ensure z-index works */
   z-index: 1000; /* Ensure toggle button is above other elements */
+  border-radius: 4px; /* Add border radius for rounded corners */
+  background-color: transparent; /* Set toggle background to transparent */
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-  border-color: whitesmoke;
+.navbar-default .navbar-toggle::before,
+.navbar-default .navbar-toggle::after {
+  content: "";
+  display: block;
+  width: 20px; /* Adjust width as needed */
+  height: 2px; /* Adjust height as needed */
+  background-color: #ccc; /* Grey color for lines */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+.navbar-default .navbar-toggle::before {
+  margin-top: -4px; /* Adjust spacing between lines */
+}
+
+.navbar-default .navbar-toggle::after {
+  margin-top: 2px; /* Adjust spacing between lines */
+}
+
+/* Toggle Button Hover/Focus Styles */
 .navbar-default .navbar-toggle:hover .icon-bar,
 .navbar-default .navbar-toggle:focus .icon-bar {
   background-color: whitesmoke; /* Ensure icon bars are visible on hover/focus */
@@ -261,7 +283,7 @@ a:hover, a:active, a:focus {
 /* Navbar Hover/Focus Styles */
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: transparent;
+  background-color: whitesmoke;
 }
 
 .navbar-default .navbar-nav > li a:hover {
@@ -280,6 +302,7 @@ a:hover, a:active, a:focus {
   color: #1dc9e3;
   background-color: transparent;
 }
+
 
 
 
