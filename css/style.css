@@ -171,7 +171,7 @@ a:hover, a:active, a:focus {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  background: none repeat scroll 0 0 #ffffff;
+  background: none repeat scroll 0 0 black;
 }
 
 .sk-spinner-pulse {
@@ -886,7 +886,7 @@ footer p {
     font-size: 16px; /* Default font size */
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 600px) {
     /* Styles for screens smaller than 768px (e.g., phones) */
     .bring {
       font-size: 11px; /* Reduce font size for smaller screens */
