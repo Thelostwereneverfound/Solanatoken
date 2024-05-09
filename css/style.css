@@ -71,7 +71,7 @@ hr {
 
 .section-btn {
   background-color: #000;
-  border: 2px solid transparent;
+  border: 2px solid coral;
   border-radius: 100px;
   color: #ffffff;
   font-size: 18px;
@@ -83,14 +83,22 @@ hr {
 }
 
 .section-btn:hover {
-  background: transparent;
-  border-top-color: #ffffff;
-  border-right-color: #222;
-  border-bottom-color: #ffffff;
-  border-left-color: #222;
+  background: coral;
+  border-top-color: coral;
+  border-right-color: coral;
+  border-bottom-color: coral;
+  border-left-color: coral;
   color: #ffffff;
 }
 
+
+a.smoothScroll {
+    transition: background-color 0.3s ease;
+}
+
+a.smoothScroll:hover {
+    background-color: black;
+}
 
 /*---------------------------------------
     General               
@@ -361,7 +369,7 @@ a:hover, a:active, a:focus {
 }
 
 #home .section-btn:hover {
-  background: transparent !important;
+  background: coral;
 }
 
 
